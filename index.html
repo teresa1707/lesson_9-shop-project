@@ -1,42 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop project</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
-
-    
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <div class="row">
+
                 <div class="col-3">
                     <div class="logo">
                         <a href="">
-                            <img src="logo.png" alt="">
+                            <img src="images/logo.png" alt="">
                         </a>
                     </div>
                 </div>
+
                 <div class="col-6">
                     <nav>
-                        <ul>
-                            <li class="menu">Home</li>
-                            <li class="menu"><Products/li>
-                            <li class="menu">Payment</li>
-                            <li class="menu">Shipping</li>
+                        <ul class="menu">
+                            <li><a href="">Home</a></li>
+                            <li class="submenu"><a href="" class="highlight">Products</a>
+                                   
+                                    <div class="dropdown">
+                                        
+                                        <a href="">Lorem ipsum</a>
+                                        <a href="">Lorem ipsum</a>
+                                        <a href="">Lorem ipsum</a>
+                                        <a href="">Lorem ipsum</a>
+                                    </div>
+                                  </li>
+                            <li><a href="">Payment</a></li>
+                            <li><a href="">Shipping</a></li>
+
                         </ul>
                     </nav>
                 </div>
-                <div class="col-3">Search</div>
-            </div>
- </div>
-    </header>
 
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col-9">
+                            <form action="" method="">
+                                <input type="text" class="search" placeholder="search">
+                                <button id="loupe" type="submit" class="search-icon">
+                                    <span>
+                                        <img src="images/search.png" alt="">
+                                    </span>
+                                </button>
+                            </form>
+
+                        </div>
+                   
+
+                    <div class="col-3">
+                        <div class="cart">
+                            <a href="">
+                                <img src="images/cart.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    </header>
     <main class="main">Main</main>
     <footer class="footer">Footer</footer>
 </body>
+
 </html>
