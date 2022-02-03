@@ -67,7 +67,8 @@ clear:both;
     color:white;
   
 }
-
+.submenu{
+    position: relatif;
 
 .col-9{
     width: 75%;
