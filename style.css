@@ -178,17 +178,13 @@ color: white;
     z-index: 111;
 }
 
-.main{
-    width: 1200px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+
     
   
 
-}
 
-#device-type{   
+
+.filter{   
     width:270px;
     height:850px;
     background-color:hsla(241, 59%, 29%, 0.5);
@@ -199,28 +195,18 @@ color: white;
    
 }
 
-
 .main-body{
-    width: 900px;
-    padding-left:30px;
-    
-    
-    float:right;
-    
-    
+float:right;        
 }   
 
-
-
-
-.col-66{
-    width: 66%;
+.col-8{
+    width: 66,66667%;
 }
-.col-33{
-    width: 33,4%;
+.col-4{
+    width: 33,33333%;
 }
 
-.col-99{
+.col-12{
     width:100%;
     
     
@@ -251,12 +237,14 @@ color: white;
 
 .title{
     margin-bottom: 50px;
-    margin-left: -3px;
+    margin-left: -1px;
 }
 
 .sortBy{
-    margin-left: 6px;
+    margin-left: 138.5px;
     display: block;
+    margin-right: -1.5px;
+    
 }
  .dropbtn{
      position: relative;
@@ -276,12 +264,13 @@ color: white;
 .dropbtn, .sort a  {
    background-color:#2c71b8;
    color: white;
-   padding: 16px;
+   padding: 15px;
    font-size: 21px;
    border: 1px solid white;
    width:270px;
    text-align: left;
    padding-left: 20px;
+   
  }
 
  .sort{
@@ -302,6 +291,7 @@ color: white;
 
  .sortBy:hover .sort{
      display:block;
+     z-index: 1;
 
  }
 
@@ -312,16 +302,19 @@ color: white;
 }  
     
 
-.screen{
-    height: 180px;
-    background-color:rgba(255, 255, 255, 0.75);
-    position: relative;
-    z-index: -1;
-}
 
-.image{
-    width: 100px;
-    text-align: center;
+.product-screen{
+    height: 180px; 
+    position: relative;
+    background-color:rgba(255, 255, 255, 0.75); 
+   
+   }
+    
+   
+
+
+.product-image{
+    
     position: absolute;
     top: 50%;
     left: 50%;
@@ -331,25 +324,33 @@ color: white;
     height: 30px;
     width: 30px;
     border: 1px solid #2c71b8;
-    background-repeat: no-repeat;
-    background-position: center;
     position: absolute;
-    left:225px;
+    right: 9px;
 }
 
 .carre-blue{
     top:10px;
-    background-image: url(images/carre-blue.png);
+    background: url(images/carre-blue.png) no-repeat;
+    background-position: center;
 }
 .heart-blue{
-    background-image: url(images/heart-blue.png);
+    background: url(images/heart-blue.png) no-repeat;
+    background-position: center;
     top:50px;
-    
+
+ }   
+.carre-blue:hover{
+    background: url(images/carre-white.png) no-repeat;  
+    background-color: #2c71b8;
+    background-position: center; 
+}
+.heart-blue:hover{
+    background: url(images/heart-white.png) no-repeat;
+    background-color: #2c71b8;
+    background-position: center;
 }
 
-
-
-.details{
+.product-details{
    height: 473px;
     background-color: rgba(44, 113, 184, 0.7); 
 }
@@ -375,41 +376,48 @@ p{
     font-weight: light;
     text-align: left;
 }
+
+.product-text{
+    line-height: 1.2;
+    padding-bottom: 10px;
+}
+.product-features{
+    padding:0 15px 15px 15px;
+    line-height: 1.5;
+}
 .bold{
    font-weight: bold; 
 }
-.info{
+.product-info{
     padding: 12px;
-}
-
-.info h2{
-    padding-bottom:15px;
-}
-.info p:not(last-of-type){
-    padding-bottom: 5px;
-}
-.info p:last-of-type{
-    padding-bottom: 15px;
-}
-.info h3{
-    padding-bottom: 15px;
-}
-.price{
-   padding-bottom: 20px;
-   transform: translateX(23%);
-   
     
 }
-.relative{
-    position: relative;
+
+.product-info h2{
+    padding-bottom:15px;
 }
+
+.product-info h3{
+    padding-bottom: 15px;
+}
+
+
+.product-price{
+  
+   padding-bottom: 20px;
+   text-align:center;
+   margin-right: 30px;
+ 
+  
+}
+
+
 .cents{
     font-size: 23px;
     position: absolute; 
     padding-left: 5px;
       
 }
-
 .add a, .more a{
     color: white;
     text-decoration: none;
@@ -426,9 +434,9 @@ p{
     margin-bottom:15px;
 
 }
-.add{
+.add:hover, .more:hover{
     background-color:rgba(255, 255, 255, .2);
-    
+    border:none;
 }
 .cart-white{
     padding-left: 10px;
