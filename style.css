@@ -429,10 +429,7 @@ p{
 .add a, .more a{
     color: white;
     text-decoration: none;
-    height:100%;
-    width:100%;
-    width: 210px;
-    height: 50px;
+  padding:14px;
 }
 
 .button{
