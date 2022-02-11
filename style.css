@@ -431,13 +431,13 @@ p{
     text-decoration: none;
     height:100%;
     width:100%;
-
+    width: 210px;
+    height: 50px;
 }
 
 .button{
     border: 1px solid white;
-    width: 210px;
-    height: 50px;
+    
     margin:0 auto;
     text-align: center;
     padding-top:13px;
