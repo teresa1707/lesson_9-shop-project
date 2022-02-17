@@ -47,7 +47,7 @@
                 <div class="col-3">
                     <div class="row">
                         <div class="col-9">
-                            <form class="form" action="" method="">
+                            <form class="formHover" action="" method="">
                                 <input type="text" class="search" placeholder="search">
                                 <button id="loupe" type="submit" class="search-icon">
                                     <span>
@@ -78,410 +78,454 @@
 
     <main class="">
         <div class="container">
-        <div class="row">
-            <div class="col-3 filter">filter
-                <form action="">
-                    <p class="form-type">DEVICE TYPE</p>
-                    <input type="checkbox">
+            <div class="row">
 
-                    </input>
-                    <p class="form-type">COLOR</p>
-                    <p class="form-type">RAM</p>
-                    <a href="" class="more">SHOW MORE OPTIONS</a>
-                </form>
-            </div>
 
-            <div class="col-9 main-body ">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="breadcrumbs">
-                        <nav>
-                            <ul class="breadcrumb1">
-                                <li><a href="">Home page</a></li>
-                                <li><a href="">Products</a></li>
-                                <li><a href="">Laptops and Tablets</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    </div>
+                <div class="col-3 filter">
+                    <form action="">
+                        <div class="filter-form-type filter-device-type">
+                            <p>DEVICE TYPE</p>
+                            <div class="checkbox"><input type="checkbox" id="laptop"><label for="laptop"></label>Laptop</div>
+                            <div class="checkbox"><input type="checkbox" id="tablet"><label for="tablet"></label>Tablet</div>
+                        </div>
+                        <div class="filter-form-type filter-color">
+                            <p>COLOR</p>
+                            <div class="checkbox"><input type="checkbox" id="black"><label for="black"></label>Black</div>
+                            <div class="checkbox"><input type="checkbox" id="red"><label for="red"></label>red</div>
+                            <div class="checkbox"><input type="checkbox" id="green"><label for="green"></label>green</div>
+                            <div class="checkbox"><input type="checkbox" id="blue"><label for="blue"></label>blue</div>
+                            <div class="checkbox"><input type="checkbox" id="orange"><label for="orange"></label>orange</div>
+                        </div>
+                        <div class="filter-form-type filter-ram">
+                            <p>RAM</p>
+                            <div class="checkbox"><input type="checkbox" id="oneGo"><label for="oneGo"></label>1GB</div>
+                            <div class="checkbox"><input type="checkbox" id="twoGo"><label for="twoGo"></label>2GB</div>
+                            <div class="checkbox"><input type="checkbox" id="fourGo"><label for="fourGo"></label>4GB</div>
+                            <div class="checkbox"><input type="checkbox" id="sixGo"><label for="sixGo"></label>6GB</div>
+                            <div class="checkbox"><input type="checkbox" id="eightGo"><label for="eightGo"></label>8GB</div>
+                        </div>
+
+
+
+                        <div class="more filter-load"><a href="">Show more options ...</a></div>
+
+                        <div class="button filter-submit">SUBMIT</div>
+                    </form>
                 </div>
 
-                <div class="row">
 
-                    <div class="col-8">
-                        <div class="title">
-                        <h1 >Laptops and Tablets</h1>
-                    </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="sortBy">
-                            <button class="dropbtn">sort by price<div></div></button>
-                            <div class="sort">
-                                <a href="#">sort by name</a>
-                                <a href="#">sort by date</a>
-                                <a href="#">sort by popularity</a>
+
+
+
+
+
+
+
+
+                <div class="col-9 main-body ">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="breadcrumbs">
+                                <nav>
+                                    <ul class="breadcrumb1">
+                                        <li><a href="">Home page</a></li>
+                                        <li><a href="">Products</a></li>
+                                        <li><a href="">Laptops and Tablets</a></li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="row">
+                    <div class="row">
 
-                    <div class="col-4">
-                        <div class="product">
-                            <div class="product-screen">
-                                <div class="carre-blue"></div>
-                                <div class="heart-blue"></div>
-                                <img class="product-image" src="images/tv.png" alt="">
-                            </div>
-                            <div class="product-details">
-                                <div class="product-info">
-                                    <h2 class="product-title">#1 Device Name</h2>
-                                    <div class="product-text">
-                                        <p>Lorem ipsum dolor sit</p>
-                                        <p>amet, consectetur</p>
-                                        <p>adipisicing elit.</p>
-                                    </div>
-                                </div>
-                                <div class="product-features">
-                                    <h3><span class="bold">TYPE:</span> Laptop</h3>
-                                    <h3><span class="bold">SCREEN SIZE:</span> 7 inches</h3>
-                                    <h3><span class="bold">RAM:</span> 1GB</h3>
-                                </div>
-                                <div class="product-price">
-                                    <h1 class="">$599<span class="cents">25</span></h1>
-                                </div>
-
-                                <div class="btns">
-                                    <div class="more button">
-                                        <h3 class="bold"><a href="">MORE DETAILS</a></h3>
-                                    </div>
-                                    <div class="add button">
-                                        <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
-                                                        src="images/cart-white.png"></span></a></h3>
-                                    </div>
-                                </div>
+                        <div class="col-8">
+                            <div class="title">
+                                <h1>Laptops and Tablets</h1>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="product third">
-                            <div class="product-screen">
-                                <div class="carre-blue"></div>
-                                <div class="heart-blue"></div>
-                                <img class="product-image" src="images/box.png" alt="">
-                            </div>
-                            <div class="product-details">
-                                <div class="product-info">
-                                    <h2 class="product-title">#2 Device Name</h2>
-                                    <div class="product-text">
-                                    <p>Lorem ipsum dolor sit</p>
-                                    <p>amet, consectetur</p>
-                                    <p>adipisicing elit.</p>
-                                </div>
-                                </div>
-                                <div class="product-features">
-                                    <h3><span class="bold">TYPE:</span> Laptop</h3>
-                                    <h3><span class="bold">SCREEN SIZE:</span> 7 inches</h3>
-                                    <h3><span class="bold">RAM:</span> 1GB</h3>
-                                </div>
-                                <div class="product-price">
-                                    <h1 class="relative">$1250 <span class="cents">99</span></h1>
-                                </div>
-
-                                <div class="btns">
-                                    <div class="more button">
-                                        <h3 class="bold"><a href="">MORE DETAILS</a></h3>
-                                    </div>
-                                    <div class="add button">
-                                        <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
-                                                        src="images/cart-white.png"></span></a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="product">
-                            <div class="product-screen">
-                                <div class="carre-blue"></div>
-                                <div class="heart-blue"></div>
-                                <img class="product-image" src="images/watch.png" alt="">
-                                
-                            </div>
-                            <div class="product-details">
-                                <div class="product-info">
-                                    <h2 class="product-title">#3 Device Name</h2>
-                                    <div class="product-text">
-                                    <p>Lorem ipsum dolor sit</p>
-                                    <p>amet, consectetur</p>
-                                    <p>adipisicing elit.</p>
-                                </div>
-                                </div>
-                                <div class="product-features">
-                                    <h3><span class="bold">TYPE:</span> Laptop</h3>
-                                    <h3><span class="bold">SCREEN SIZE:</span> 7 inches</h3>
-                                    <h3><span class="bold">RAM:</span> 1GB</h3>
-                                </div>
-                                <div class="product-price">
-                                    <h1 class="relative">$399 <span class="cents">50</span></h1>
-                                </div>
-
-                                <div class="btns">
-                                    <div class="more button">
-                                        <h3 class="bold"><a href="">MORE DETAILS</a></h3>
-                                    </div>
-                                    <div class="add button">
-                                        <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
-                                                        src="images/cart-white.png"></span></a></h3>
-                                    </div>
+                        <div class="col-4">
+                            <div class="sortBy">
+                                <button class="dropbtn">sort by price<div></div></button>
+                                <div class="sort">
+                                    <a href="#">sort by name</a>
+                                    <a href="#">sort by date</a>
+                                    <a href="#">sort by popularity</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <div class="row">
 
-                </div>
-                <div class="row">
-
-                    <div class="col-4">
-                        <div class="product">
-                            <div class="product-screen">
-                                <div class="carre-blue"></div>
-                                <div class="heart-blue"></div>
-                                <img class="product-image" src="images/comp.png" alt="">
-                            </div>
-                            <div class="product-details">
-                                <div class="product-info">
-                                    <h2 class="product-title">#1 Device Name</h2>
-                                    <div class="product-text">
-                                    <p>Lorem ipsum dolor sit</p>
-                                    <p>amet, consectetur</p>
-                                    <p>adipisicing elit.</p>
+                        <div class="col-4">
+                            <div class="product">
+                                <div class="product-screen">
+                                    <div class="carre-blue"></div>
+                                    <div class="heart-blue"></div>
+                                    <img class="product-image" src="images/tv.png" alt="">
                                 </div>
-                                </div>
-                                <div class="product-features">
-                                    <h3><span class="bold">TYPE:</span> Laptop</h3>
-                                    <h3><span class="bold">SCREEN SIZE:</span> 7 inches</h3>
-                                    <h3><span class="bold">RAM:</span> 1GB</h3>
-                                </div>
-                                <div class="product-price">
-                                    <h1 class="relative">$599 <span class="cents">25</span></h1>
-                                </div>
-
-                                <div class="btns">
-                                    <div class="more button">
-                                        <h3 class="bold"><a href="">MORE DETAILS</a></h3>
-                                    </div>
-                                    <div class="add button">
-                                        <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
-                                                        src="images/cart-white.png"></span></a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="product">
-                            <div class="product-screen">
-                                <div class="carre-blue"></div>
-                                <div class="heart-blue"></div>
-                                <img class="product-image" src="images/ipod.png" alt="">
-                            </div>
-                            <div class="product-details">
-                                <div class="product-info">
-                                    <h2 class="product-title">#2 Device Name</h2>
-                                    <div class="product-text">
-                                    <p>Lorem ipsum dolor sit</p>
-                                    <p>amet, consectetur</p>
-                                    <p>adipisicing elit.</p>
-                                </div>
-                                </div>
-                                <div class="product-features">
-                                    <h3><span class="bold">TYPE:</span> Laptop</h3>
-                                    <h3><span class="bold">SCREEN SIZE:</span> 7 inches</h3>
-                                    <h3><span class="bold">RAM:</span> 1GB</h3>
-                                </div>
-                                <div class="product-price">
-                                    <h1 class="relative">$1250 <span class="cents">99</span></h1>
-                                </div>
-
-                                <div class="btns">
-                                    <div class="more button">
-                                        <h3 class="bold"><a href="">MORE DETAILS</a></h3>
-                                    </div>
-                                    <div class="add button">
-                                        <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
-                                                        src="images/cart-white.png"></span></a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="product">
-                            <div class="product-screen">
-                                <div class="carre-blue"></div>
-                                <div class="heart-blue"></div>
-                                <img class="product-image" src="images/mobile.png" alt="">
-                            </div>
-                            <div class="product-details">
-                                <div class="product-info">
-                                    <h2 class="product-title">#3 Device Name</h2>
-                                    <div class="product-text">
-                                    <p>Lorem ipsum dolor sit</p>
-                                    <p>amet, consectetur</p>
-                                    <p>adipisicing elit.</p>
-                                </div>
-                                </div>
-                                <div class="product-features">
-                                    <h3><span class="bold">TYPE:</span> Laptop</h3>
-                                    <h3><span class="bold">SCREEN SIZE:</span> 7 inches</h3>
-                                    <h3><span class="bold">RAM:</span> 1GB</h3>
-                                </div>
-                                <div class="product-price">
-                                    <h1 class="relative">$399 <span class="cents">50</span></h1>
-                                </div>
-
-                                <div class="btns">
-                                    <div class="more button">
-                                        <h3 class="bold"><a href="">MORE DETAILS</a></h3>
-                                    </div>
-                                    <div class="add button">
-                                        <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
-                                                        src="images/cart-white.png"></span></a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-                <div class="row">
-
-                    <div class="col-4">
-                        <div class="product">
-                            <div class="product-screen">
-                                <div class="carre-blue"></div>
-                                <div class="heart-blue"></div>
-                                <img class="product-image" src="images/comp.png" alt="">
-                            </div>
-                            <div class="product-details">
-                                <div class="product-info">
-                                    <h2 class="product-title">#1 Device Name</h2>
-                                    <div class="product-text">
-                                    <p>Lorem ipsum dolor sit</p>
-                                    <p>amet, consectetur</p>
-                                    <p>adipisicing elit.</p>
-                                </div>
-                                </div>
-                                <div class="product-features">
-                                    <h3><span class="bold">TYPE:</span> Laptop</h3>
-                                    <h3><span class="bold">SCREEN SIZE:</span> 7 inches</h3>
-                                    <h3><span class="bold">RAM:</span> 1GB</h3>
-                                </div>
-                                <div class="product-price">
-                                    <h1 class="relative">$599 <span class="cents">25</span></h1>
-                                </div>
-
-                                <div class="btns">
-                                    <div class="more button">
-                                        <h3 class="bold"><a href="">MORE DETAILS</a></h3>
-                                    </div>
-                                    <div class="add button">
-                                        <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
-                                                        src="images/cart-white.png"></span></a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="product">
-                            <div class="product-screen">
-                                <div class="carre-blue"></div>
-                                <div class="heart-blue"></div>
-                                <img class="product-image" src="images/ipod.png" alt="">
-                            </div>
-                            <div class="product-details">
-                                <div class="product-info">
-                                    <h2 class="product-title">#2 Device Name</h2>
-                                    <div class="product-text">
-                                    <p>Lorem ipsum dolor sit</p>
-                                    <p>amet, consectetur</p>
-                                    <p>adipisicing elit.</p>
-                                </div>
+                                <div class="product-details">
+                                    <div class="product-info">
+                                        <h2 class="product-title">#1 Device Name</h2>
+                                        <div class="product-text">
+                                            <p>Lorem ipsum dolor sit</p>
+                                            <p>amet, consectetur</p>
+                                            <p>adipisicing elit.</p>
+                                        </div>
                                     </div>
                                     <div class="product-features">
-                                    <h3><span class="bold">TYPE:</span> Laptop</h3>
-                                    <h3><span class="bold">SCREEN SIZE:</span> 7 inches</h3>
-                                    <h3><span class="bold">RAM:</span> 1GB</h3>
-                                </div>
-                                <div class="product-price">
-                                    <h1 class="relative">$1250 <span class="cents">99</span></h1>
-                                </div>
+                                        <h3><span class="bold">TYPE:</span> Laptop</h3>
+                                        <h3><span class="bold">SCREEN SIZE:</span> 7 inches</h3>
+                                        <h3><span class="bold">RAM:</span> 1GB</h3>
+                                    </div>
+                                    <div class="product-price">
+                                        <h1 class="">$599<span class="cents">25</span></h1>
+                                    </div>
 
-                                <div class="btns">
-                                    <div class="more button">
-                                        <h3 class="bold"><a href="">MORE DETAILS</a></h3>
-                                    </div>
-                                    <div class="add button">
-                                        <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
-                                                        src="images/cart-white.png"></span></a></h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="product">
-                            <div class="product-screen">
-                                <div class="carre-blue"></div>
-                                <div class="heart-blue"></div>
-                                <img class="product-image" src="images/mobile.png" alt="">
-                            </div>
-                            <div class="product-details">
-                                <div class="product-info">
-                                    <h2 class="product-title">#3 Device Name</h2>
-                                    <div class="product-text">
-                                    <p>Lorem ipsum dolor sit</p>
-                                    <p>amet, consectetur</p>
-                                    <p>adipisicing elit.</p>
-                                </div>
-                                </div>
-                                <div class="product-features">
-                                    <h3><span class="bold">TYPE:</span> Laptop</h3>
-                                    <h3><span class="bold">SCREEN SIZE:</span> 7 inches</h3>
-                                    <h3><span class="bold">RAM:</span> 1GB</h3>
-                                </div>
-                                <div class="product-price">
-                                    <h1>$399 <span class="cents">50</span></h1>
-                                </div>
-
-                                <div class="btns">
-                                    <div class="more button">
-                                        <h3 class="bold"><a href="">MORE DETAILS</a></h3>
-                                    </div>
-                                    <div class="add button">
-                                        <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
-                                                        src="images/cart-white.png"></span></a></h3>
+                                    <div class="btns">
+                                        <div class="more button">
+                                            <h3 class="bold"><a href="">MORE DETAILS</a></h3>
+                                        </div>
+                                        <div class="add button">
+                                            <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
+                                                            src="images/cart-white.png"></span></a></h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="col-4">
+                            <div class="product third">
+                                <div class="product-screen">
+                                    <div class="carre-blue"></div>
+                                    <div class="heart-blue"></div>
+                                    <img class="product-image" src="images/box.png" alt="">
+                                </div>
+                                <div class="product-details">
+                                    <div class="product-info">
+                                        <h2 class="product-title">#2 Device Name</h2>
+                                        <div class="product-text">
+                                            <p>Lorem ipsum dolor sit</p>
+                                            <p>amet, consectetur</p>
+                                            <p>adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="product-features">
+                                        <h3><span class="bold">TYPE:</span> Laptop</h3>
+                                        <h3><span class="bold">SCREEN SIZE:</span> 7 inches</h3>
+                                        <h3><span class="bold">RAM:</span> 1GB</h3>
+                                    </div>
+                                    <div class="product-price">
+                                        <h1 class="relative">$1250 <span class="cents">99</span></h1>
+                                    </div>
+
+                                    <div class="btns">
+                                        <div class="more button">
+                                            <h3 class="bold"><a href="">MORE DETAILS</a></h3>
+                                        </div>
+                                        <div class="add button">
+                                            <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
+                                                            src="images/cart-white.png"></span></a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="product">
+                                <div class="product-screen">
+                                    <div class="carre-blue"></div>
+                                    <div class="heart-blue"></div>
+                                    <img class="product-image" src="images/watch.png" alt="">
+
+                                </div>
+                                <div class="product-details">
+                                    <div class="product-info">
+                                        <h2 class="product-title">#3 Device Name</h2>
+                                        <div class="product-text">
+                                            <p>Lorem ipsum dolor sit</p>
+                                            <p>amet, consectetur</p>
+                                            <p>adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="product-features">
+                                        <h3><span class="bold">TYPE:</span> Laptop</h3>
+                                        <h3><span class="bold">SCREEN SIZE:</span> 7 inches</h3>
+                                        <h3><span class="bold">RAM:</span> 1GB</h3>
+                                    </div>
+                                    <div class="product-price">
+                                        <h1 class="relative">$399 <span class="cents">50</span></h1>
+                                    </div>
+
+                                    <div class="btns">
+                                        <div class="more button">
+                                            <h3 class="bold"><a href="">MORE DETAILS</a></h3>
+                                        </div>
+                                        <div class="add button">
+                                            <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
+                                                            src="images/cart-white.png"></span></a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-4">
+                            <div class="product">
+                                <div class="product-screen">
+                                    <div class="carre-blue"></div>
+                                    <div class="heart-blue"></div>
+                                    <img class="product-image" src="images/comp.png" alt="">
+                                </div>
+                                <div class="product-details">
+                                    <div class="product-info">
+                                        <h2 class="product-title">#1 Device Name</h2>
+                                        <div class="product-text">
+                                            <p>Lorem ipsum dolor sit</p>
+                                            <p>amet, consectetur</p>
+                                            <p>adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="product-features">
+                                        <h3><span class="bold">TYPE:</span> Laptop</h3>
+                                        <h3><span class="bold">SCREEN SIZE:</span> 7 inches</h3>
+                                        <h3><span class="bold">RAM:</span> 1GB</h3>
+                                    </div>
+                                    <div class="product-price">
+                                        <h1 class="relative">$599 <span class="cents">25</span></h1>
+                                    </div>
+
+                                    <div class="btns">
+                                        <div class="more button">
+                                            <h3 class="bold"><a href="">MORE DETAILS</a></h3>
+                                        </div>
+                                        <div class="add button">
+                                            <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
+                                                            src="images/cart-white.png"></span></a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="product">
+                                <div class="product-screen">
+                                    <div class="carre-blue"></div>
+                                    <div class="heart-blue"></div>
+                                    <img class="product-image" src="images/ipod.png" alt="">
+                                </div>
+                                <div class="product-details">
+                                    <div class="product-info">
+                                        <h2 class="product-title">#2 Device Name</h2>
+                                        <div class="product-text">
+                                            <p>Lorem ipsum dolor sit</p>
+                                            <p>amet, consectetur</p>
+                                            <p>adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="product-features">
+                                        <h3><span class="bold">TYPE:</span> Laptop</h3>
+                                        <h3><span class="bold">SCREEN SIZE:</span> 7 inches</h3>
+                                        <h3><span class="bold">RAM:</span> 1GB</h3>
+                                    </div>
+                                    <div class="product-price">
+                                        <h1 class="relative">$1250 <span class="cents">99</span></h1>
+                                    </div>
+
+                                    <div class="btns">
+                                        <div class="more button">
+                                            <h3 class="bold"><a href="">MORE DETAILS</a></h3>
+                                        </div>
+                                        <div class="add button">
+                                            <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
+                                                            src="images/cart-white.png"></span></a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="product">
+                                <div class="product-screen">
+                                    <div class="carre-blue"></div>
+                                    <div class="heart-blue"></div>
+                                    <img class="product-image" src="images/mobile.png" alt="">
+                                </div>
+                                <div class="product-details">
+                                    <div class="product-info">
+                                        <h2 class="product-title">#3 Device Name</h2>
+                                        <div class="product-text">
+                                            <p>Lorem ipsum dolor sit</p>
+                                            <p>amet, consectetur</p>
+                                            <p>adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="product-features">
+                                        <h3><span class="bold">TYPE:</span> Laptop</h3>
+                                        <h3><span class="bold">SCREEN SIZE:</span> 7 inches</h3>
+                                        <h3><span class="bold">RAM:</span> 1GB</h3>
+                                    </div>
+                                    <div class="product-price">
+                                        <h1 class="relative">$399 <span class="cents">50</span></h1>
+                                    </div>
+
+                                    <div class="btns">
+                                        <div class="more button">
+                                            <h3 class="bold"><a href="">MORE DETAILS</a></h3>
+                                        </div>
+                                        <div class="add button">
+                                            <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
+                                                            src="images/cart-white.png"></span></a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="row">
+
+                        <div class="col-4">
+                            <div class="product">
+                                <div class="product-screen">
+                                    <div class="carre-blue"></div>
+                                    <div class="heart-blue"></div>
+                                    <img class="product-image" src="images/comp.png" alt="">
+                                </div>
+                                <div class="product-details">
+                                    <div class="product-info">
+                                        <h2 class="product-title">#1 Device Name</h2>
+                                        <div class="product-text">
+                                            <p>Lorem ipsum dolor sit</p>
+                                            <p>amet, consectetur</p>
+                                            <p>adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="product-features">
+                                        <h3><span class="bold">TYPE:</span> Laptop</h3>
+                                        <h3><span class="bold">SCREEN SIZE:</span> 7 inches</h3>
+                                        <h3><span class="bold">RAM:</span> 1GB</h3>
+                                    </div>
+                                    <div class="product-price">
+                                        <h1 class="relative">$599 <span class="cents">25</span></h1>
+                                    </div>
+
+                                    <div class="btns">
+                                        <div class="more button">
+                                            <h3 class="bold"><a href="">MORE DETAILS</a></h3>
+                                        </div>
+                                        <div class="add button">
+                                            <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
+                                                            src="images/cart-white.png"></span></a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="product">
+                                <div class="product-screen">
+                                    <div class="carre-blue"></div>
+                                    <div class="heart-blue"></div>
+                                    <img class="product-image" src="images/ipod.png" alt="">
+                                </div>
+                                <div class="product-details">
+                                    <div class="product-info">
+                                        <h2 class="product-title">#2 Device Name</h2>
+                                        <div class="product-text">
+                                            <p>Lorem ipsum dolor sit</p>
+                                            <p>amet, consectetur</p>
+                                            <p>adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="product-features">
+                                        <h3><span class="bold">TYPE:</span> Laptop</h3>
+                                        <h3><span class="bold">SCREEN SIZE:</span> 7 inches</h3>
+                                        <h3><span class="bold">RAM:</span> 1GB</h3>
+                                    </div>
+                                    <div class="product-price">
+                                        <h1 class="relative">$1250 <span class="cents">99</span></h1>
+                                    </div>
+
+                                    <div class="btns">
+                                        <div class="more button">
+                                            <h3 class="bold"><a href="">MORE DETAILS</a></h3>
+                                        </div>
+                                        <div class="add button">
+                                            <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
+                                                            src="images/cart-white.png"></span></a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="product">
+                                <div class="product-screen">
+                                    <div class="carre-blue"></div>
+                                    <div class="heart-blue"></div>
+                                    <img class="product-image" src="images/mobile.png" alt="">
+                                </div>
+                                <div class="product-details">
+                                    <div class="product-info">
+                                        <h2 class="product-title">#3 Device Name</h2>
+                                        <div class="product-text">
+                                            <p>Lorem ipsum dolor sit</p>
+                                            <p>amet, consectetur</p>
+                                            <p>adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                    <div class="product-features">
+                                        <h3><span class="bold">TYPE:</span> Laptop</h3>
+                                        <h3><span class="bold">SCREEN SIZE:</span> 7 inches</h3>
+                                        <h3><span class="bold">RAM:</span> 1GB</h3>
+                                    </div>
+                                    <div class="product-price">
+                                        <h1>$399 <span class="cents">50</span></h1>
+                                    </div>
+
+                                    <div class="btns">
+                                        <div class="more button">
+                                            <h3 class="bold"><a href="">MORE DETAILS</a></h3>
+                                        </div>
+                                        <div class="add button">
+                                            <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
+                                                            src="images/cart-white.png"></span></a></h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
 
-
+                    <div class="row">
+                        <div class="col-12">
+                    
+                    <div class="add load-more"><a href="">Load more . . .</a></div>
+                            </div>
+                        </div>
                 </div>
 
-
+                
             </div>
 
         </div>
-    </div>
+
+
     </main>
-    <footer class="footer">Footer</footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-copyright">© Copyright 2017</div>
+        </div>
+    </footer>
 </body>
 
 </html>
