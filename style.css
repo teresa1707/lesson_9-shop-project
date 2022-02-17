@@ -192,8 +192,9 @@ color: white;
     text-align: center;
 }
 .filter-load a:hover, .load-more a:hover{
+    text-shadow: white 2px 0 10px;
+    font-weight: 600;
     
-    font-weight: 700;
 
 }
 
