@@ -83,8 +83,9 @@ menu:after {
     color: white;
 
 }
-
-
+.submenu{
+    position: relatif;
+}
 .col-9 {
     width: 75%;
 }
@@ -161,12 +162,12 @@ input.search::placeholder {
 .dropdown {
     display: none;
     background-color: #2c71b8;
-    width: 285px;
+    width: 286px;
     padding-top: 25px;
     padding-bottom: 10px;
     position: absolute;
-    margin-left: -1px;
-    z-index: 100000;
+    left:-1px;
+     
 }
 
 .dropdown a {
@@ -181,11 +182,13 @@ input.search::placeholder {
     display: block;
     background-color: #2c71b8;
     color: white;
+    z-index: 1000;
 }
 
 .dropdown a:hover {
     background-color: white;
     color: #2c71b8;
+  
 }
 
 .submenu:hover .highlight {
@@ -199,6 +202,7 @@ input.search::placeholder {
   font-size: 80px;
   font-weight: light;
   font-family: 'Open Sans', sans-serif;
+  
 }
 
 .slider > div {
@@ -244,10 +248,23 @@ input.search::placeholder {
 
 
 .product-quantity{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
+.product-quantity input{
+    width: 25px;
+    text-align: center;
+}
+
+.increment-button, .decrement-button{
+    width: 25px;
+   
+}
+
+.increment-button{
+  padding-right: 15px;
+}
 .filter-load,
 .load-more {
     text-align: center;
@@ -442,6 +459,7 @@ input[type="checkbox"] {
 .product {
     width: 270px;
     border: 1px solid white;
+    padding-bottom: 30px;
     margin-bottom: 30px;
 }
 
