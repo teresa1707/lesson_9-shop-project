@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop project</title>
     <link rel="stylesheet" href="reset.css">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,7 +18,6 @@
     <header class="header">
         <div class="container">
             <div class="row">
-
                 <div class="col-3">
                     <div class="logo">
                         <a href="">
@@ -63,7 +66,7 @@
                             <div class="cart">
                                 <a href="">
                                     <img src="images/cart.png" alt="">
-                                    <div class="number">0</div>
+                                    <div class="number" id="product-count">0</div>
                                 </a>
                             </div>
                         </div>
@@ -74,7 +77,20 @@
 
     </header>
 
-    <div class="slider">Slider</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="slider">
+                    <div>Slide #1</div>
+                    <div>Slide #2</div>
+                    <div>Slide #3</div>
+                    <div>Slide #4</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 
     <main class="">
         <div class="container">
@@ -85,30 +101,30 @@
                     <form action="">
                         <div class="filter-form-type filter-device-type">
                             <p>DEVICE TYPE</p>
-                            <div class="checkbox"><input type="checkbox" id="laptop"><label for="laptop"></label>Laptop
+                            <div class="checkbox"><input type="checkbox" id="laptop"><label for="laptop">Laptop</label>
                             </div>
-                            <div class="checkbox"><input type="checkbox" id="tablet"><label for="tablet"></label>Tablet
+                            <div class="checkbox"><input type="checkbox" id="tablet"><label for="tablet">Tablet</label>
                             </div>
                         </div>
                         <div class="filter-form-type filter-color">
                             <p>COLOR</p>
-                            <div class="checkbox"><input type="checkbox" id="black"><label for="black"></label>Black
+                            <div class="checkbox"><input type="checkbox" id="black"><label for="black">Black</label>
                             </div>
-                            <div class="checkbox"><input type="checkbox" id="red"><label for="red"></label>red</div>
-                            <div class="checkbox"><input type="checkbox" id="green"><label for="green"></label>green
+                            <div class="checkbox"><input type="checkbox" id="red"><label for="red">red</label></div>
+                            <div class="checkbox"><input type="checkbox" id="green"><label for="green">green</label>
                             </div>
-                            <div class="checkbox"><input type="checkbox" id="blue"><label for="blue"></label>blue</div>
-                            <div class="checkbox"><input type="checkbox" id="orange"><label for="orange"></label>orange
+                            <div class="checkbox"><input type="checkbox" id="blue"><label for="blue">blue</label></div>
+                            <div class="checkbox"><input type="checkbox" id="orange"><label for="orange">orange</label>
                             </div>
                         </div>
                         <div class="filter-form-type filter-ram">
                             <p>RAM</p>
-                            <div class="checkbox"><input type="checkbox" id="oneGo"><label for="oneGo"></label>1GB</div>
-                            <div class="checkbox"><input type="checkbox" id="twoGo"><label for="twoGo"></label>2GB</div>
-                            <div class="checkbox"><input type="checkbox" id="fourGo"><label for="fourGo"></label>4GB
+                            <div class="checkbox"><input type="checkbox" id="oneGo"><label for="oneGo">1GB</label></div>
+                            <div class="checkbox"><input type="checkbox" id="twoGo"><label for="twoGo">2GB</label></div>
+                            <div class="checkbox"><input type="checkbox" id="fourGo"><label for="fourGo">4GB</label>
                             </div>
-                            <div class="checkbox"><input type="checkbox" id="sixGo"><label for="sixGo"></label>6GB</div>
-                            <div class="checkbox"><input type="checkbox" id="eightGo"><label for="eightGo"></label>8GB
+                            <div class="checkbox"><input type="checkbox" id="sixGo"><label for="sixGo">6GB</label></div>
+                            <div class="checkbox"><input type="checkbox" id="eightGo"><label for="eightGo">8GB</label>
                             </div>
                         </div>
 
@@ -169,7 +185,7 @@
                             <div class="product">
                                 <div class="product-screen">
                                     <div class="carre-blue"></div>
-                                    <div class="heart-blue"></div>
+                                    <div id="like" class="heart-blue"></div>
                                     <img class="product-image" src="images/tv.png" alt="">
                                 </div>
                                 <div class="product-details">
@@ -190,13 +206,18 @@
                                         <h1 class="">$599<span class="cents">25</span></h1>
                                     </div>
 
+                                    <div class="product-quantity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="increment-button">+</button>
+                                    </div>
+
                                     <div class="btns">
-                                        <div class="more button">
-                                            <h3 class="bold"><a href="">MORE DETAILS</a></h3>
+                                        <div class="more button show-more-btns">
+                                            <h3 class="bold">MORE DETAILS</h3>
                                         </div>
-                                        <div class="add button">
-                                            <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
-                                                            src="images/cart-white.png"></span></a></h3>
+                                        <div class="add button add-to-cart">
+                                            <h3 class="bold">ADD TO CART <span class="cart-white"><img src="images/cart-white.png"></span></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -206,7 +227,7 @@
                             <div class="product third">
                                 <div class="product-screen">
                                     <div class="carre-blue"></div>
-                                    <div class="heart-blue"></div>
+                                    <div id="like" class="heart-blue"></div>
                                     <img class="product-image" src="images/box.png" alt="">
                                 </div>
                                 <div class="product-details">
@@ -227,13 +248,18 @@
                                         <h1 class="relative">$1250 <span class="cents">99</span></h1>
                                     </div>
 
+                                    <div class="product-quantity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="increment-button">+</button>
+                                    </div>
+
                                     <div class="btns">
-                                        <div class="more button">
-                                            <h3 class="bold"><a href="">MORE DETAILS</a></h3>
+                                        <div class="more button show-more-btns">
+                                            <h3 class="bold">MORE DETAILS</h3>
                                         </div>
-                                        <div class="add button">
-                                            <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
-                                                            src="images/cart-white.png"></span></a></h3>
+                                        <div class="add button add-to-cart">
+                                            <h3 class="bold">ADD TO CART <span class="cart-white"><img src="images/cart-white.png"></span></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -243,7 +269,7 @@
                             <div class="product">
                                 <div class="product-screen">
                                     <div class="carre-blue"></div>
-                                    <div class="heart-blue"></div>
+                                    <div id="like" class="heart-blue"></div>
                                     <img class="product-image" src="images/watch.png" alt="">
 
                                 </div>
@@ -265,13 +291,18 @@
                                         <h1 class="relative">$399 <span class="cents">50</span></h1>
                                     </div>
 
+                                    <div class="product-quantity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="increment-button">+</button>
+                                    </div>
+
                                     <div class="btns">
-                                        <div class="more button">
-                                            <h3 class="bold"><a href="">MORE DETAILS</a></h3>
+                                        <div class="more button show-more-btns">
+                                            <h3 class="bold">MORE DETAILS</h3>
                                         </div>
-                                        <div class="add button">
-                                            <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
-                                                            src="images/cart-white.png"></span></a></h3>
+                                        <div class="add button add-to-cart">
+                                            <h3 class="bold">ADD TO CART <span class="cart-white"><img src="images/cart-white.png"></span></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -286,7 +317,7 @@
                             <div class="product">
                                 <div class="product-screen">
                                     <div class="carre-blue"></div>
-                                    <div class="heart-blue"></div>
+                                    <div id="like" class="heart-blue"></div>
                                     <img class="product-image" src="images/comp.png" alt="">
                                 </div>
                                 <div class="product-details">
@@ -307,13 +338,18 @@
                                         <h1 class="relative">$599 <span class="cents">25</span></h1>
                                     </div>
 
+                                    <div class="product-quantity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="increment-button">+</button>
+                                    </div>
+
                                     <div class="btns">
-                                        <div class="more button">
-                                            <h3 class="bold"><a href="">MORE DETAILS</a></h3>
+                                        <div class="more button show-more-btns">
+                                            <h3 class="bold">MORE DETAILS</h3>
                                         </div>
-                                        <div class="add button">
-                                            <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
-                                                            src="images/cart-white.png"></span></a></h3>
+                                        <div class="add button add-to-cart">
+                                            <h3 class="bold">ADD TO CART <span class="cart-white"><img src="images/cart-white.png"></span></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -323,7 +359,7 @@
                             <div class="product">
                                 <div class="product-screen">
                                     <div class="carre-blue"></div>
-                                    <div class="heart-blue"></div>
+                                    <div id="like" class="heart-blue"></div>
                                     <img class="product-image" src="images/ipod.png" alt="">
                                 </div>
                                 <div class="product-details">
@@ -344,13 +380,18 @@
                                         <h1 class="relative">$1250 <span class="cents">99</span></h1>
                                     </div>
 
+                                    <div class="product-quantity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="increment-button">+</button>
+                                    </div>
+
                                     <div class="btns">
-                                        <div class="more button">
-                                            <h3 class="bold"><a href="">MORE DETAILS</a></h3>
+                                        <div class="more button show-more-btns">
+                                            <h3 class="bold">MORE DETAILS</h3>
                                         </div>
-                                        <div class="add button">
-                                            <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
-                                                            src="images/cart-white.png"></span></a></h3>
+                                        <div class="add button add-to-cart">
+                                            <h3 class="bold">ADD TO CART <span class="cart-white"><img src="images/cart-white.png"></span></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -360,7 +401,7 @@
                             <div class="product">
                                 <div class="product-screen">
                                     <div class="carre-blue"></div>
-                                    <div class="heart-blue"></div>
+                                    <div id="like" class="heart-blue"></div>
                                     <img class="product-image" src="images/mobile.png" alt="">
                                 </div>
                                 <div class="product-details">
@@ -381,13 +422,18 @@
                                         <h1 class="relative">$399 <span class="cents">50</span></h1>
                                     </div>
 
+                                    <div class="product-quantity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="increment-button">+</button>
+                                    </div>
+
                                     <div class="btns">
-                                        <div class="more button">
-                                            <h3 class="bold"><a href="">MORE DETAILS</a></h3>
+                                        <div class="more button show-more-btns">
+                                            <h3 class="bold">MORE DETAILS</h3>
                                         </div>
-                                        <div class="add button">
-                                            <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
-                                                            src="images/cart-white.png"></span></a></h3>
+                                        <div class="add button add-to-cart">
+                                            <h3 class="bold">ADD TO CART <span class="cart-white"><img src="images/cart-white.png"></span></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -402,7 +448,7 @@
                             <div class="product">
                                 <div class="product-screen">
                                     <div class="carre-blue"></div>
-                                    <div class="heart-blue"></div>
+                                    <div id="like" class="heart-blue"></div>
                                     <img class="product-image" src="images/comp.png" alt="">
                                 </div>
                                 <div class="product-details">
@@ -423,13 +469,18 @@
                                         <h1 class="relative">$599 <span class="cents">25</span></h1>
                                     </div>
 
+                                    <div class="product-quantity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="increment-button">+</button>
+                                    </div>
+
                                     <div class="btns">
-                                        <div class="more button">
-                                            <h3 class="bold"><a href="">MORE DETAILS</a></h3>
+                                        <div class="more button show-more-btns">
+                                            <h3 class="bold">MORE DETAILS</h3>
                                         </div>
-                                        <div class="add button">
-                                            <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
-                                                            src="images/cart-white.png"></span></a></h3>
+                                        <div class="add button add-to-cart">
+                                            <h3 class="bold">ADD TO CART <span class="cart-white"><img src="images/cart-white.png"></span></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -439,7 +490,7 @@
                             <div class="product">
                                 <div class="product-screen">
                                     <div class="carre-blue"></div>
-                                    <div class="heart-blue"></div>
+                                    <div id="like" class="heart-blue"></div>
                                     <img class="product-image" src="images/ipod.png" alt="">
                                 </div>
                                 <div class="product-details">
@@ -460,13 +511,18 @@
                                         <h1 class="relative">$1250 <span class="cents">99</span></h1>
                                     </div>
 
+                                    <div class="product-quantity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="increment-button">+</button>
+                                    </div>
+
                                     <div class="btns">
-                                        <div class="more button">
-                                            <h3 class="bold"><a href="">MORE DETAILS</a></h3>
+                                        <div class="more button show-more-btns">
+                                            <h3 class="bold">MORE DETAILS</h3>
                                         </div>
-                                        <div class="add button">
-                                            <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
-                                                            src="images/cart-white.png"></span></a></h3>
+                                        <div class="add button add-to-cart">
+                                            <h3 class="bold">ADD TO CART <span class="cart-white"><img src="images/cart-white.png"></span></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -476,7 +532,7 @@
                             <div class="product">
                                 <div class="product-screen">
                                     <div class="carre-blue"></div>
-                                    <div class="heart-blue"></div>
+                                    <div id="like" class="heart-blue"></div>
                                     <img class="product-image" src="images/mobile.png" alt="">
                                 </div>
                                 <div class="product-details">
@@ -497,13 +553,18 @@
                                         <h1>$399 <span class="cents">50</span></h1>
                                     </div>
 
+                                    <div class="product-quantity">
+                                        <button class="decrement-button">-</button>
+                                        <input type="text" value="1" readonly>
+                                        <button class="increment-button">+</button>
+                                    </div>
+
                                     <div class="btns">
-                                        <div class="more button">
-                                            <h3 class="bold"><a href="">MORE DETAILS</a></h3>
+                                        <div class="more button show-more-btns">
+                                            <h3 class="bold">MORE DETAILS</h3>
                                         </div>
-                                        <div class="add button">
-                                            <h3 class="bold"><a href="">ADD TO CART <span class="cart-white"><img
-                                                            src="images/cart-white.png"></span></a></h3>
+                                        <div class="add button ">
+                                            <h3 class="bold">ADD TO CART <span class="cart-white"><img src="images/cart-white.png"></span></h3>
                                         </div>
                                     </div>
                                 </div>
@@ -533,6 +594,29 @@
             <div class="footer-copyright">© Copyright 2017</div>
         </div>
     </footer>
+
+
+    <div class="modal">
+        <div class="modal-block">
+            <form action="">
+                <div class="btn-close">X</div>
+                <h3 class="h3">Please call for more details</h3>
+                <div class="form-fields">
+                    <input type="text" placeholder="Your name">
+                </div>
+                <div class="form-fields">
+                    <input type="text" placeholder="Your phone">
+                </div>
+                <button>Please call</button>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script src="app.js"></script>
+
 </body>
 
 </html>
